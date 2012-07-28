@@ -1,0 +1,37 @@
+Testsuite: net.nathanwells.tests.ContentTestControllerTests
+Tests run: 2, Failures: 1, Errors: 0, Time elapsed: 1.952 sec
+------------- Standard Output ---------------
+--Output from testXml--
+java.util.Collections$1@3fa99295
+all
+--Output from testJson--
+application/json
+java.util.Collections$1@104b1bcd
+all
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testXml--
+--Output from testJson--
+------------- ---------------- ---------------
+
+Testcase: testXml took 1.751 sec
+Testcase: testJson took 0.173 sec
+	FAILED
+Assertion failed: 
+
+assert response.text == "JSON Format"
+       |        |    |
+       |        |    false
+       |        XML Format
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@45eee3fb
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.text == "JSON Format"
+       |        |    |
+       |        |    false
+       |        XML Format
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@45eee3fb
+
+	at net.nathanwells.tests.ContentTestControllerTests.testJson(ContentTestControllerTests.groovy:27)
+

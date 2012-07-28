@@ -1,0 +1,7 @@
+--Output from testXml--
+java.util.Collections$1@3fa99295
+all
+--Output from testJson--
+application/json
+java.util.Collections$1@104b1bcd
+all

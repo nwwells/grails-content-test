@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="1" hostname="heidelberg.local" id="0" name="ContentTestControllerTests" package="net.nathanwells.tests" tests="2" time="1.952" timestamp="2012-07-28T03:58:46">
+      <properties />
+
+      <testcase classname="net.nathanwells.tests.ContentTestControllerTests" name="testXml" time="1.752" />
+
+      <testcase classname="net.nathanwells.tests.ContentTestControllerTests" name="testJson" time="0.173">
+          <failure message="Assertion failed: &#xa;&#xa;assert response.text == &quot;JSON Format&quot;&#xa;       |        |    |&#xa;       |        |    false&#xa;       |        XML Format&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@45eee3fb&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.text == &quot;JSON Format&quot;
+       |        |    |
+       |        |    false
+       |        XML Format
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@45eee3fb
+
+	at net.nathanwells.tests.ContentTestControllerTests.testJson(ContentTestControllerTests.groovy:27)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testXml--
+java.util.Collections$1@3fa99295
+all
+--Output from testJson--
+application/json
+java.util.Collections$1@104b1bcd
+all
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testXml--
+--Output from testJson--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
